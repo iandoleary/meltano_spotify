@@ -1,0 +1,12 @@
+version: 1
+default_environment: dev
+project_id: f18caf05-fc05-4a4f-859c-381f59d826e7
+environments:
+- name: dev
+- name: staging
+- name: prod
+plugins:
+  extractors:
+  - name: tap-spotify
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/tap-spotify.git

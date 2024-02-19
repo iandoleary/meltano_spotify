@@ -10,3 +10,15 @@ plugins:
   - name: tap-spotify
     variant: matatika
     pip_url: git+https://github.com/Matatika/tap-spotify.git
+    capabilities:
+    - state
+    - catalog
+    - discover
+    settings:
+    - name: client_id
+    - name: client_secret
+    - name: refresh_token
+  loaders:
+  - name: target-postgres
+    variant: meltanolabs
+    pip_url: meltanolabs-target-postgres
